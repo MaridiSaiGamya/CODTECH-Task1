@@ -1,0 +1,53 @@
+/*This Java program, SimpleCalculator, allows the user to perform basic arithmetic operations (+, -, *, /) on two numbers entered via the console input.*/
+/*It handles input validation to prevent errors such as division by zero or unrecognized operations.*/
+/*It uses a switch statement to execute the selected arithmetic operation and outputs the result if the operation is valid.*/
+
+import java.util.Scanner;
+
+public class SimpleCalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Choose an operation (+, -, *, /): ");
+        char operation = scanner.next().charAt(0);
+
+        System.out.print("Enter the first number: ");
+        double n1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double n2 = scanner.nextDouble();
+
+        double result = 0;
+        boolean validOperation = true;
+
+        switch (operation) {
+            case '+':
+                result = n1 + n2;
+                break;
+            case '-':
+                result = n1 - n2;
+                break;
+            case '*':
+                result = n1 * n2;
+                break;
+            case '/':
+                if (n2 != 0) {
+                    result = n1 / n2;
+                } else {
+                    System.out.println("Error: Division by zero.");
+                    validOperation = false;
+                }
+                break;
+            default:
+                System.out.println("Error: Invalid operation.");
+                validOperation = false;
+        }
+
+        if (validOperation) {
+            System.out.println("The result is: " + result);
+        }
+
+        scanner.close();
+    }
+}
