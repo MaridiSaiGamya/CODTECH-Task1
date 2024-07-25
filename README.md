@@ -1,10 +1,10 @@
 # CODTECH-Task1
-NAME: MARIDI SAI GAMYA
-COMPANY: CODTECH IT SOLUTIONS
-ID: CT12DS626
-Domain: Java Programming
-Duration: 10th June to 10th August
-Mentor: G.Sravani
+**NAME:** MARIDI SAI GAMYA
+**COMPANY:** CODTECH IT SOLUTIONS
+**ID:** CT12DS626
+**Domain:** Java Programming
+**Duration:** 10th June to 10th August
+**Mentor:** G.Sravani
 **Overview of the Project**
 Project: Simple Calculator
 __Objective__:
